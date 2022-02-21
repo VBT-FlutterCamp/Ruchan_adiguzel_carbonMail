@@ -1,8 +1,6 @@
 import 'package:carbon_mail/views/mailList_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
-import 'test_view.dart';
-
 class BottomNavbarControllerView extends StatefulWidget {
   BottomNavbarControllerView({Key? key}) : super(key: key);
 
@@ -21,9 +19,19 @@ class _BottomNavbarControllerViewState
     });
   }
 
+  var navbarItems = [
+    BottomNavigationBarItem(icon: Icon(Icons.ac_unit), title: Text("")),
+    BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("")),
+    BottomNavigationBarItem(
+        icon: Icon(
+          Icons.align_vertical_center_outlined,
+        ),
+        title: Text(""))
+  ];
+
   var listOfViews = [
     FirstPageView(),
-    TestView(),
+    Scaffold(),
     Scaffold(
       body: Center(child: Text("3")),
     )
@@ -36,15 +44,7 @@ class _BottomNavbarControllerViewState
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         onTap: _ontap,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.ac_unit), title: Text("")),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("")),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.align_vertical_center_outlined,
-              ),
-              title: Text(""))
-        ],
+        items: navbarItems,
       ),
     );
   }

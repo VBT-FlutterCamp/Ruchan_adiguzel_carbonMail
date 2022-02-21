@@ -1,3 +1,4 @@
+import 'package:carbon_mail/core/constants/color_constants.dart';
 import 'package:carbon_mail/views/wellcome_view.dart';
 import 'package:flutter/material.dart';
 
@@ -9,14 +10,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xff293855),
-        textTheme: TextTheme(
+        scaffoldBackgroundColor: ColorConstants.primaryColor,
+        textTheme: const TextTheme(
             headline3: TextStyle(color: Colors.white),
             bodyText1: TextStyle(color: Colors.white),
             bodyText2: TextStyle(color: Colors.white)),
       ),
       title: 'Carbon Mail',
-      home: WellComeView(),
+      home: const WellComeView(),
     );
   }
 }
