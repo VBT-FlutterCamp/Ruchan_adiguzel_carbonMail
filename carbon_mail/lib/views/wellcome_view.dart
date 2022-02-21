@@ -13,20 +13,18 @@ class WellComeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: [
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              children: [
-                HeaderText(context),
-                BodyText(context) //TODO fix that area
-              ],
-            ),
-            NextPageBtn(context)
-          ],
-        )
-      ]),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            children: [
+              HeaderText(context),
+              BodyText(context) //TODO fix that area
+            ],
+          ),
+          NextPageBtn(context)
+        ],
+      ),
     );
   }
 

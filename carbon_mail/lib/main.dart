@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: ColorConstants.primaryColor,
+        scaffoldBackgroundColor: Color(0xFF283855),
         textTheme: const TextTheme(
             headline3: TextStyle(color: Colors.white),
             bodyText1: TextStyle(color: Colors.white),

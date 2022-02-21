@@ -30,7 +30,7 @@ class _BottomNavbarControllerViewState
   ];
 
   var listOfViews = [
-    FirstPageView(),
+    MailListView(),
     Scaffold(),
     Scaffold(
       body: Center(child: Text("3")),

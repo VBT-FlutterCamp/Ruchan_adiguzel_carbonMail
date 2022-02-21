@@ -1,3 +1,8 @@
+import 'dart:convert';
+
+List<UserModel> userModelFromJson(String str) =>
+    List<UserModel>.from(json.decode(str).map((x) => UserModel.fromJson(x)));
+
 class UserModel {
   int? userId;
   int? id;
@@ -22,4 +27,3 @@ class UserModel {
     return data;
   }
 }
-//FOR NETWORK 
