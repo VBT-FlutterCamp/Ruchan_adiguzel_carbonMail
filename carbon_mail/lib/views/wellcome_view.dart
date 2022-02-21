@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'mail_list_view.dart';
+import 'bottom_navbar_controller.dart';
 
 class WellComeView extends StatelessWidget {
   const WellComeView({Key? key}) : super(key: key);
@@ -31,7 +31,7 @@ class WellComeView extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => MailListView(),
+                        builder: (context) => BottomNavbarControllerView(),
                       ));
                 },
                 child: Text("Get Started  >>")) //TODO fix that area
